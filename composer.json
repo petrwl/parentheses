@@ -1,0 +1,19 @@
+{
+  "name": "petrwl/parentheses",
+  "description": "Check balance parentheses",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Petr Sch1egolskov",
+      "email": "petrexpress@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Parentheses\\": "src/"
+    }
+  }
+}
