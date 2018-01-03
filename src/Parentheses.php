@@ -1,11 +1,10 @@
 <?php
 declare(strict_types = 1);
 namespace Parentheses;
-use Parantheses\Exceptions\InvalidArgumentException;
 
 /**
- * Class Parentheses
- * @package Parentheses
+ * Class parentheses
+ * @package parentheses
  */
 class Parentheses
 {
@@ -13,7 +12,7 @@ class Parentheses
     private $string;
 
     /**
-     * Parentheses constructor.
+     * parentheses constructor.
      * @param string $string
      */
     public function __construct(string $string)

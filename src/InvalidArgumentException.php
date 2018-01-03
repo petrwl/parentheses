@@ -1,5 +1,5 @@
 <?php
-namespace Parantheses\Exceptions;
+namespace Parantheses;
 
 class InvalidArgumentException extends \Exception
 {
