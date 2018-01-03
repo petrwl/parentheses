@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 namespace Parentheses;
+use Parentheses\Exception\InvalidArgumentException;
 
 /**
  * Class parentheses
