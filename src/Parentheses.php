@@ -19,7 +19,6 @@ class Parentheses
     public function __construct(string $string)
     {
         $this->string = $string;
-        $this->valid();
     }
 
     /**
@@ -52,6 +51,8 @@ class Parentheses
      */
     public function isBalanced() : bool
     {
+        $this->valid();
+
         $string = $this->filter();
 
         $count = 0;
