@@ -55,11 +55,20 @@ class Parentheses
 
         $string = $this->filter();
 
-        $count = 0;
-        do {
-            $string = preg_replace('|\(\)|', '', $string, -1, $count);
-        } while ($count > 0);
+        $length = strlen($string);
+        $stack = [];
+        for ($i=0; $i<$length; $i++) {
+            $char = $string[$i];
+            if ($char == '(') {
+                array_push($stack, $char);
+            } else {
+                if (empty($stack)) {
+                    return false;
+                }
+                array_pop($stack);
+            }
+        }
 
-        return empty($string);
+        return empty($stack);
     }
 }
